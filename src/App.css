@@ -1,0 +1,50 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.timeslots {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.calendar > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.calendar > div button {
+  padding: 6px 22px;
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  background: #00bcd4;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.timezone {
+  padding: 10px 75px;
+  gap: 10px;
+  width: 100%;
+}
+
+.timezone select {
+  display: block;
+  width: 50%;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
