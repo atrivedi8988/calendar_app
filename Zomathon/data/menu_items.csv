@@ -1,0 +1,7 @@
+item_id,restaurant_id,item_name,category,price,cost,is_available
+301,201,Butter Chicken Meal,Main Course,320,180,true
+302,201,Paneer Tikka Wrap,Snacks,220,120,true
+303,202,Masala Dosa Combo,Main Course,180,90,true
+304,203,Peri Peri Burger Combo,Main Course,260,150,true
+305,204,Protein Power Bowl,Healthy,280,160,true
+306,202,Idli Vada Combo,Breakfast,140,70,true

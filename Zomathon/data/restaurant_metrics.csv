@@ -1,0 +1,5 @@
+metric_id,restaurant_id,metric_date,prep_time_avg_min,cancellation_rate,acceptance_rate,delivery_sla_breach_rate
+1,201,2026-02-20,24,0.03,0.96,0.06
+2,202,2026-02-20,18,0.02,0.98,0.04
+3,203,2026-02-20,20,0.05,0.94,0.08
+4,204,2026-02-20,16,0.01,0.99,0.03
