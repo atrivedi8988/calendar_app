@@ -1,0 +1,5 @@
+restaurant_id,name,city,cuisine,avg_rating,is_active
+201,Spice Route,Bengaluru,North Indian,4.4,true
+202,Dosa District,Bengaluru,South Indian,4.2,true
+203,Burger Forge,Bengaluru,Fast Food,4.1,true
+204,Healthy Bowl,Bengaluru,Salads,4.5,true

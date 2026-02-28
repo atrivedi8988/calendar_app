@@ -1,0 +1,4 @@
+user_id,name,city,preferred_cuisine,veg_preference,signup_date
+101,Ananya,Bengaluru,North Indian,false,2024-10-12
+102,Rohit,Bengaluru,South Indian,true,2024-11-04
+103,Sana,Hyderabad,Fast Food,false,2025-01-10

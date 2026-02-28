@@ -1,0 +1,13 @@
+flowchart LR
+    A[Data Sources\nOrders, Clickstream, Menu, Restaurant Ops] --> B[Feature Engineering]
+    B --> C[Candidate Generation\nCuisine, geo, popularity, history]
+    C --> D[Ranking Layer\nRule-based profit-aware score]
+    D --> E[Business Rules\nSLA, budget, fairness, stock]
+    E --> F[Online Serving API\nTop-N recommendations]
+    F --> G[User App\nImpressions/Clicks/Orders]
+    G --> H[Feedback Loop\nLogs + labels refresh]
+    H --> B
+
+    I[Monitoring\nCTR, CVR, AOV, Margin, Latency] --> J[A/B Testing\nControl vs Treatment]
+    F --> I
+    J --> D

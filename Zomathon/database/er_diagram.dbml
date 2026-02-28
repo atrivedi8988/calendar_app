@@ -1,0 +1,77 @@
+Table users {
+  user_id int [pk]
+  name varchar
+  city varchar
+  preferred_cuisine varchar
+  veg_preference boolean
+  signup_date datetime
+}
+
+Table restaurants {
+  restaurant_id int [pk]
+  name varchar
+  city varchar
+  cuisine varchar
+  avg_rating float
+  is_active boolean
+}
+
+Table menu_items {
+  item_id int [pk]
+  restaurant_id int [ref: > restaurants.restaurant_id]
+  item_name varchar
+  category varchar
+  price decimal
+  cost decimal
+  is_available boolean
+}
+
+Table orders {
+  order_id int [pk]
+  user_id int [ref: > users.user_id]
+  restaurant_id int [ref: > restaurants.restaurant_id]
+  order_timestamp datetime
+  status varchar
+  total_amount decimal
+  discount_amount decimal
+  delivery_time_min int
+}
+
+Table order_items {
+  order_item_id int [pk]
+  order_id int [ref: > orders.order_id]
+  item_id int [ref: > menu_items.item_id]
+  quantity int
+  unit_price decimal
+}
+
+Table user_events {
+  event_id int [pk]
+  user_id int [ref: > users.user_id]
+  item_id int [ref: > menu_items.item_id]
+  event_type varchar
+  event_timestamp datetime
+  session_id varchar
+}
+
+Table restaurant_metrics {
+  metric_id int [pk]
+  restaurant_id int [ref: > restaurants.restaurant_id]
+  metric_date date
+  prep_time_avg_min float
+  cancellation_rate float
+  acceptance_rate float
+  delivery_sla_breach_rate float
+}
+
+Table recommendation_logs {
+  rec_log_id int [pk]
+  user_id int [ref: > users.user_id]
+  item_id int [ref: > menu_items.item_id]
+  score float
+  rank_position int
+  model_version varchar
+  shown_timestamp datetime
+  clicked boolean
+  ordered boolean
+}
