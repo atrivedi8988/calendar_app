@@ -1,0 +1,6 @@
+event_id,user_id,item_id,event_type,event_timestamp,session_id
+1,101,301,view,2026-02-20T13:10:00,s1
+2,101,301,click,2026-02-20T13:11:00,s1
+3,101,302,view,2026-02-20T13:12:00,s1
+4,101,304,add_to_cart,2026-02-20T13:15:00,s1
+5,102,303,click,2026-02-20T09:02:00,s2
